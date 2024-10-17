@@ -1,0 +1,39 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev --host --dotenv ./.env.development",
+    "build": "nuxt build --dotenv ./.env.production",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "start": "cross-env PORT=3002 HOST=127.0.0.1 node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@css-render/vue3-ssr": "^0.15.14",
+    "@element-plus/nuxt": "^1.0.9",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/i18n": "^8.3.1",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
+    "@vant/nuxt": "^1.0.5",
+    "nuxt": "^3.12.4",
+    "sass": "^1.77.8",
+    "sass-loader": "^13.3.3",
+    "vue": "^3.4.34",
+    "vue-router": "^4.4.0"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.3",
+    "@stripe/stripe-js": "^4.2.0",
+    "animate.css": "^4.1.1",
+    "dayjs": "^1.11.13",
+    "html2canvas": "^1.4.1",
+    "jquery": "^3.7.1",
+    "jspdf": "^2.5.1",
+    "md5": "^2.3.0",
+    "nuxt-echarts": "^0.2.0",
+    "nuxt-swiper": "^1.2.2",
+    "pinia": "^2.2.1"
+  }
+}

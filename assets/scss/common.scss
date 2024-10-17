@@ -1,0 +1,204 @@
+/**
+* reset and common
+**/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  font: inherit;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+strong {
+  font-weight: bold;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+body {
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+html {
+  font-family:
+    Microsoft YaHei-Regular,
+    Microsoft YaHei;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #fff;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+body{
+  font-family: sans-serif;
+}
+:root {
+  --orange: #fd7e14;
+  --blue: #007bff;
+  --light-bule: #5a6ea7;
+  --bg: #f1f1ff;
+  --text-gray: #999999;
+}
+
+// 基础布局
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-left {
+  @extend .flex;
+  justify-content: flex-start;
+}
+.flex-right {
+  @extend .flex;
+  justify-content: flex-end;
+}
+.flex-center {
+  @extend .flex;
+  justify-content: center;
+}
+.flex-between {
+  @extend .flex;
+  justify-content: space-between;
+}
+.flex-around {
+  @extend .flex;
+  justify-content: space-around;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 8vw;
+}

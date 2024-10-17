@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import 'animate.css';
+@import "_grid";
+@import "common";
+
+:root {
+  --swiper-theme-color: #007bff !important;
+  --animate-duration: 2000ms;
+  --animate-delay: 0.9s;
+}
+.van-toast {
+  z-index: 2009 !important;
+}
+body {
+  overflow-x: hidden;
+  background-color: #000;
+}
+
+.banner{
+  width: 100vw;
+  height: 100vh;
+  .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .text{
+    position: absolute;
+    top: 45%;
+    color: #fff;
+    line-height: 1.4;
+    .text-1{
+      font-size: 48px;
+    }
+    .text-2{
+      font-size: 36px;
+      font-weight: bold;
+    }
+  }
+}
